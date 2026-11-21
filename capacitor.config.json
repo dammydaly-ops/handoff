@@ -1,0 +1,7 @@
+{
+  "appId": "com.indexcoding.handoff",
+  "appName": "Handoff",
+  "webDir": "www",
+  "backgroundColor": "#6f220d",
+  "android": { "allowMixedContent": false }
+}

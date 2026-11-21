@@ -1,0 +1,6 @@
+const V='handoff-v1';
+const FILES=["./", "app/activity.html", "app/automations.html", "app/build.html", "app/connect.html", "app/connections.html", "app/dashboard.html", "app/detail.html", "app/help.html", "app/new.html", "app/plan.html", "app/priority.html", "app/settings.html", "app/team.html", "app/templates.html", "app/test.html", "css/style.css", "fonts/Inter-Bold.otf", "fonts/Inter-Medium.otf", "fonts/Inter-Regular.otf", "fonts/Inter-SemiBold.otf", "fonts/Lora-Italic-Variable.ttf", "fonts/Lora-Variable.ttf", "icons/apple-touch-icon.png", "icons/favicon-32.png", "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "index.html", "js/pages.js", "js/shell.js", "login.html", "manifest.webmanifest", "pricing.html", "signup.html"];
+self.addEventListener('install',e=>{e.waitUntil(caches.open(V).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
+self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==V).map(x=>caches.delete(x)))).then(()=>self.clients.claim()))});
+self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;
+  e.respondWith(caches.match(e.request,{ignoreSearch:true}).then(r=>r||fetch(e.request).then(res=>{const c=res.clone();caches.open(V).then(x=>x.put(e.request,c));return res}).catch(()=>caches.match('index.html'))))});

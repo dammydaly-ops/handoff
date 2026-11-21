@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Build new · Handoff</title><meta name="description" content="Describe an automation in plain words. Handoff builds it and connects it to your customers."><meta name="theme-color" content="#6f220d">
+<link rel="manifest" href="../manifest.webmanifest"><link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png"><link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Handoff">
+<link rel="preload" href="../fonts/Lora-Variable.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="../css/style.css"></head>
+<body data-root="../" data-page="new" data-shell="app">
+<main class="app-main"><div class="ph"><div><div class="eyebrow">Step 1 of 3</div><h1 class="h1" style="margin-top:8px">What should it <em>do?</em></h1><p>Write it like you would tell a helper. We will show you what we understood before building.</p></div></div>
+<div class="split" style="--side:440px"><div class="stack" style="--gap:20px">
+<div class="card cream"><label class="field" style="margin-bottom:12px"><span>Describe your automation</span><textarea class="textarea" id="idea" style="min-height:150px;font-family:var(--serif);font-size:18px" placeholder="When a customer messages about a product, reply with the price and ask what size they want…"></textarea></label>
+<div class="chips2" id="ideas"><button type="button">Answer price questions</button><button type="button">Take orders</button><button type="button">Remind about appointments</button><button type="button">Capture leads</button></div>
+<div class="sm-lab" style="color:#8a4a30">Where will it run?</div><div class="row" id="chsel" style="margin-bottom:22px"><label class="opt" style="flex:1;min-width:140px"><input type="checkbox" checked>WhatsApp</label><label class="opt" style="flex:1;min-width:140px"><input type="checkbox" >Facebook</label><label class="opt" style="flex:1;min-width:140px"><input type="checkbox" >Instagram</label></div>
+<div class="sm-lab" style="color:#8a4a30">How do you want to build?</div><div class="grid g2" style="gap:10px;margin-bottom:24px"><label class="radio" style="background:#fbf4e9;color:var(--ink);border-color:rgba(111,34,13,.2)"><input type="radio" name="mode" value="watch" checked><span class="rd"></span><span><b>Watch it build</b><small style="color:#7a4a38">See each step with explanations</small></span></label><label class="radio" style="background:#fbf4e9;color:var(--ink);border-color:rgba(111,34,13,.2)"><input type="radio" name="mode" value="bg"><span class="rd"></span><span><b>Build in background</b><small style="color:#7a4a38">We tell you when it is ready</small></span></label></div>
+<button class="btn btn-rust btn-lg btn-block" id="goBuild" type="button">Build it <i class="i " data-i="arrow"></i></button></div></div>
+<aside class="card gold" id="understood"><div class="k"><i class="i " data-i="sparkle"></i>What we understood</div><p class="muted" id="uEmpty">Start typing and this panel fills in: when it starts, what it does, and what it needs from you.</p><div id="uList" class="stack" style="--gap:12px" hidden></div></aside></div></main>
+<script src="../js/shell.js"></script><script src="../js/pages.js"></script>
+</body></html>

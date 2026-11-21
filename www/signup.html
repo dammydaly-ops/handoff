@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Create your account · Handoff</title><meta name="description" content="Describe an automation in plain words. Handoff builds it and connects it to your customers."><meta name="theme-color" content="#6f220d">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Handoff">
+<link rel="preload" href="fonts/Lora-Variable.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="css/style.css"></head>
+<body data-root="" data-page="signup" data-shell="none">
+<main class="auth"><section class="auth-l"><a class="logo" href="index.html"><span class="mark">h</span>Handoff</a>
+<div><h1 class="display">Your first automation is <em>one sentence</em> away.</h1><p class="lead hide-s" style="margin-top:22px;max-width:620px">Create your account, describe an idea, and watch it get built. No card needed for the trial.</p></div>
+<div class="perks"><div class="perk"><b>14 days</b><span>Free trial, no card</span></div><div class="perk"><b>3 min</b><span>Typical build time</span></div><div class="perk"><b>0 code</b><span>Describe it in words</span></div></div></section>
+<section class="auth-r"><form class="auth-form" id="suForm" novalidate>
+<div class="steps" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+<div data-s="1"><h2 class="h1">Create your account</h2><p class="sub">Free for 14 days. No card.</p>
+<button type="button" class="gbtn"><b></b>Continue with Google</button><div class="or">or with email</div>
+<label class="field"><span>Your name</span><input class="input" name="name" autocomplete="name" placeholder="Amaka Obi" required></label>
+<label class="field"><span>Email</span><input class="input" type="email" name="email" autocomplete="email" placeholder="you@business.com" required></label>
+<label class="field"><span>Password</span><input class="input" type="password" id="pw" autocomplete="new-password" placeholder="At least 8 characters" minlength="8" required><div class="pw" id="pwm"><span></span><span></span><span></span><span></span><em id="pwt" style="font-style:normal;margin-left:8px;white-space:nowrap">Too short</em></div></label>
+<button class="btn btn-rust btn-lg btn-block" type="button" data-next>Continue <i class="i " data-i="arrow"></i></button>
+<div class="auth-foot">Already have an account? <a href="login.html">Log in</a></div></div>
+
+<div data-s="2" hidden><h2 class="h1">About your business</h2><p class="sub">So we can suggest the right starting point.</p>
+<label class="field"><span>Business name</span><input class="input" name="biz" placeholder="Ada's Fashion Store"></label>
+<div class="sm-lab">What do you sell or do?</div>
+<div class="row2" style="margin-bottom:22px"><label class="opt"><input type="radio" name="kind" value="Fashion and retail" checked>Fashion and retail</label><label class="opt"><input type="radio" name="kind" value="Food and drinks" >Food and drinks</label><label class="opt"><input type="radio" name="kind" value="Beauty and salon" >Beauty and salon</label><label class="opt"><input type="radio" name="kind" value="Services" >Services</label><label class="opt"><input type="radio" name="kind" value="Electronics" >Electronics</label><label class="opt"><input type="radio" name="kind" value="Something else" >Something else</label></div>
+<div class="row"><button class="btn btn-ghost btn-lg" type="button" data-back style="color:var(--rust);border-color:rgba(111,34,13,.35)">Back</button><button class="btn btn-rust btn-lg" style="flex:1" type="button" data-next>Continue <i class="i " data-i="arrow"></i></button></div></div>
+
+<div data-s="3" hidden><h2 class="h1">Where do your customers talk to you?</h2><p class="sub">Pick one to start. You can add more later.</p>
+<div class="stack" style="--gap:10px;margin-bottom:22px"><label class="opt"><input type="radio" name="ch" value="WhatsApp" checked><span class="lg" style="background:#25a244;width:36px;height:36px;font-size:15px">W</span><span>WhatsApp<small>Most popular for shops</small></span></label><label class="opt"><input type="radio" name="ch" value="Facebook Messenger" ><span class="lg" style="background:#1877f2;width:36px;height:36px;font-size:15px">f</span><span>Facebook Messenger<small>Page messages</small></span></label><label class="opt"><input type="radio" name="ch" value="Instagram" ><span class="lg" style="background:#c13584;width:36px;height:36px;font-size:15px">I</span><span>Instagram<small>DMs and comments (Growth plan and up)</small></span></label><label class="opt"><input type="radio" name="ch" value="Not sure yet" ><span class="lg" style="background:#8a5a46;width:36px;height:36px;font-size:15px">?</span><span>Not sure yet<small>Decide when you connect</small></span></label></div>
+<label class="check" style="margin-bottom:22px"><input type="checkbox" required><span>I agree to the Terms and Privacy Policy.</span></label>
+<div class="row"><button class="btn btn-ghost btn-lg" type="button" data-back style="color:var(--rust);border-color:rgba(111,34,13,.35)">Back</button><button class="btn btn-clay btn-lg" style="flex:1" type="submit" id="suGo">Start my free trial</button></div>
+<div class="fine"><i class="i " data-i="shield"></i>No card needed. Cancel any time.</div></div>
+</form></section></main>
+<script src="js/shell.js"></script><script src="js/pages.js"></script>
+</body></html>
